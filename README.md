@@ -1,8 +1,14 @@
 # typeset
-An Scala comptime Set indexed by types and checked at compile time.
-
+An Scala Type indexed set checked at compile time.
 
 a TypeSet is similar to ZIO's `Has[_]` type but without any reflection need.
+
+### Adding to your project.
+
+Jars are available for all versions and commits at Jitpack.io.
+
+[![](https://jitpack.io/v/vic/typeset.svg)](https://jitpack.io/#vic/typeset)
+
 
 ### Usage
 

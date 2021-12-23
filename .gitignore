@@ -1,0 +1,7 @@
+/out
+/result*
+/.idea*
+/.bsp*
+/.metals*
+/.vscode*
+/.env*

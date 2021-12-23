@@ -35,14 +35,14 @@ class TypeSet(val crossScalaVersion: String)
     with PublishModule { self =>
   def publishVersion = meta.publishVersion
 
-  override def artifactName = "tset"
+  override def artifactName = "typeset"
 
   def pomSettings = PomSettings(
     description = "Compile-time Type-level Set",
     organization = "com.github.vic",
-    url = "https://github.com/vic/scalable",
+    url = "https://github.com/vic/typeset",
     licenses = Seq(License.`Apache-2.0`),
-    versionControl = VersionControl.github("vic", "tset"),
+    versionControl = VersionControl.github("vic", "typeset"),
     developers = Seq(
       Developer("vic", "Victor Borja", "https://github.com/vic")
     )

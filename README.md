@@ -1,4 +1,5 @@
-# typeset
+# typeset [![Main workflow](https://github.com/vic/typeset/actions/workflows/workflow.yml/badge.svg)](https://github.com/vic/typeset/actions)
+
 An Scala Type indexed set checked at compile time.
 
 a TypeSet is similar to ZIO's `Has[_]` type but without any reflection need.

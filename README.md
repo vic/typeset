@@ -25,7 +25,7 @@ val x = "Hello" :+: TNil
 Of course, being a Set, you can't duplicate types of values on it.
 
 ```scala
-val bad = "Hello" :+: "World" :+: TNil
+// val bad = "Hello" :+: "World" :+: TNil // This wont compile!!
 ```
 
 The type of the set can be re-arrenged on the left side and any combination

@@ -1,1 +1,3 @@
-package object typeset
+package object typeset {
+  type TNil = TNil.type
+}

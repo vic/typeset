@@ -2,8 +2,7 @@ package typeset
 
 sealed trait TypeSet
 
-object TNil       extends TNil
-sealed trait TNil extends TypeSet
+object TNil extends TypeSet
     with CanBeHeaded.ForNil
     with CanBeJoined.ForNil
 

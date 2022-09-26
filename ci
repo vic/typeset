@@ -23,7 +23,7 @@ case "$1" in
  ;;
 
  scalafmt)
-   exec $0 cs launch --jvm zulu:1.16.0 --scala 2.13.5 scalafmt -- --mode diff --diff-branch master "${@:2}"
+   exec $0 cs launch --jvm zulu:1.16.0 --scala 2.13.5 scalafmt -- --mode diff --diff-branch main "${@:2}"
  ;;
 
  scalafmt-test)

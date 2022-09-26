@@ -1,6 +1,5 @@
 // -*- mode: scala -*-
 
-import ammonite.ops._
 import mill._
 import mill.api.Loose
 import mill.scalalib._
@@ -21,9 +20,9 @@ object meta {
 
   val MILL_VERSION   = Properties.propOrNull("MILL_VERSION")
   val versionFromEnv = Properties.propOrNone("PUBLISH_VERSION")
-  val gitSha         = nonEmpty(%%("git", "rev-parse", "--short", "HEAD").out.trim)
+  val gitSha         = nonEmpty(os.proc("git", "rev-parse", "--short", "HEAD").call().out.trim)
   val gitTag = nonEmpty(
-    %%("git", "tag", "-l", "-n0", "--points-at", "HEAD").out.trim
+    os.proc("git", "tag", "-l", "-n0", "--points-at", "HEAD").call().out.trim
   )
   val publishVersion =
     (versionFromEnv orElse gitTag orElse gitSha).getOrElse("latest")
